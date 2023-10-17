@@ -1,6 +1,7 @@
-performance_evaluations/
-pretrained_models/
-saved_models/
+performance_evaluations/*
+pretrained_models/*
+saved_models/*
+datasets/*
 ZIP/
 __pycache__/
 *.pyc
@@ -8,7 +9,6 @@ __pycache__/
 *.egg-info/
 .venv/
 env/
-datasets/*
 *.bak
 *.jpg
 *.jpeg
