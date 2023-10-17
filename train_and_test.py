@@ -21,7 +21,7 @@ def _train_or_test(args, model, dataloader, optimizer=None, class_specific=True,
 
     if "pps_loss" in losses:
         condition_PPs_loss = True
-    if "icnn" in losses:
+    if "icnn_loss" in losses:
         condition_icnn_loss = True
     if "Gaffinity" in losses:
         condition_Gaffinity_loss = True
