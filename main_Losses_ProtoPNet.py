@@ -100,7 +100,7 @@ if __name__ == '__main__':
     #                    train_batch_size, test_batch_size, train_push_batch_size
     # Setting the dataset paths instead of loading it
     train_dir = dataset_path + 'train/'
-    test_dir = dataset_path + 'val/'
+    test_dir = dataset_path + 'test/'
     train_push_dir = train_dir
     train_batch_size = 80
     test_batch_size = 100
