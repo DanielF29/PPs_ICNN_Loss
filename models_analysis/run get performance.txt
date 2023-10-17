@@ -1,0 +1,5 @@
+python get_performance_csv_PPs_naive_KFold.py \
+-gpuid=5 \
+-modeldir="../saved_models/CrossV_run1/Mix_naive_KFoldTrainVal_test_OsDA_resnet50_3pps_Fold0/" \
+-model="20push_0.9974.pth" \
+-imgdir='../datasets/Mix_naive_KFoldTrainVal_test/test/'

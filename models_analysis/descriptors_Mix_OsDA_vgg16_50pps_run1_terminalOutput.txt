@@ -1,0 +1,92 @@
+python eval_models_in_subfolders_Mix.py
+mod values:  {'contrast': 0.45, 'saturation': 0.7, 'hue': 0.1, 'shape': '4_0.05', 'texture': 4, 'brigss': 0.8}
+evaluation of PPs models:
+total_num_subfolders: 151
+/workspace/ICNN_PPs_results/Mix_results/saved_models/run1/Mix_OsDA_vgg16_50
+num_of_values_on_complete_evaluations_list:  151
+num_of_values_on_eval_so_far_list:  0
+num_of_values_on_pending_evaluations_list:  151
+
+folder_path:    /workspace/ICNN_PPs_results/Mix_results/saved_models/run1/Mix_OsDA_vgg16_50
+progress: 1/151,         percentage: 0.66
+Evaluation data:
+class:  MIX-Subtype_IVd 1 /  6
+/opt/conda/lib/python3.8/site-packages/torch/nn/functional.py:749: UserWarning: Note that order of thguments: ceil_mode and return_indices will changeto match the args list in nn.MaxPool2d in a future rse.
+  warnings.warn("Note that order of the arguments: ceil_mode and return_indices will change"
+class:  MIX-Subtype_IIIa 2 /  6
+class:  MIX-Subtype_Ia 3 /  6
+class:  MIX-Subtype_IIa 4 /  6
+class:  MIX-Subtype_IVc 5 /  6
+class:  MIX-Subtype_Va 6 /  6
+Done with global scores. Now saving the local scores...
+DONE with training set. Now calculating for the test set...
+class:  MIX-Subtype_IVd 1 /  6
+class:  MIX-Subtype_IIIa 2 /  6
+class:  MIX-Subtype_Ia 3 /  6
+class:  MIX-Subtype_IIa 4 /  6
+class:  MIX-Subtype_IVc 5 /  6
+class:  MIX-Subtype_Va 6 /  6
+Done with global scores. Now saving the local scores...
+DONE!
+                        weighted_delta
+prototype modification
+0         brightness          0.332176
+          contrast            0.556310
+          hue                 0.488274
+          saturation          0.472371
+          shape               0.443683
+Mean per modification training set:                weighted_delta
+modification
+brightness          0.265668
+contrast            0.418964
+hue                 0.557305
+saturation          0.282715
+shape               0.311392
+texture             0.353057
+Mean per modification test set:                weighted_delta
+modification
+brightness          0.230608
+contrast            0.319498
+hue                 0.425835
+saturation          0.253565
+shape               0.224661
+texture             0.262088
+std per modification training set:                weighted_delta
+modification
+brightness          0.121498
+contrast            0.329604
+hue                 0.314289
+saturation          0.220621
+shape               0.119392
+texture             0.187775
+std per modification test set:                weighted_delta
+modification
+brightness          0.147018
+contrast            0.316111
+hue                 0.252327
+saturation          0.272987
+shape               0.097870
+texture             0.184364
+Traceback (most recent call last):
+  File "eval_models_in_subfolders_Mix.py", line 273, in <module>
+    def_descriptors_pps.get_descriptors(gpuid, modeldir, model_name, imgdir, csv_file_name)
+  File "/workspace/ICNN_PPs_results/Mix_results/def_descriptors_pps.py", line 299, in get_descriptors
+    scores_train = pd.read_csv(save_analysis_path + csv_file_name + 'trainingset_weighted_global_descors_score_%s_%s_%s_%s_%s_%s.csv'%(str(contr_lvl), str(sat_lvl), str(hue_lvl), str(mod_value_dict["sha), str(texture_h),str(bright_lvl)))
+  File "/opt/conda/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/conda/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/conda/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/opt/conda/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_eng
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/opt/conda/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in ____
+    self._open_handles(src, kwds)
+  File "/opt/conda/lib/python3.8/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_les
+    self.handles = get_handle(
+  File "/opt/conda/lib/python3.8/site-packages/pandas/io/common.py", line 702, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'descriptors/run1/Mix_OsDA_vgg16_50Mix__Mix_Ovgg16_50_run1trainingset_weighted_global_descriptors_score_0.45_0.7_0.1_4_0.05_4_0.8.csv'
+A01098051@GPL-DGX1-420075:~$ 

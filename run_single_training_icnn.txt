@@ -1,0 +1,1 @@
+python main_Losses_ProtoPNet.py -dataset="./datasets/Sur/" -gpuid=0 -base_architecture="densenet201" -da="OsDA" -pps_per_class=3 -num_classes=6 -run=test_run -losses="icnn"
