@@ -29,6 +29,6 @@ env/
 *.webp
 *.svg
 #To do not keep track of a file or folder with certain name in any folder:
-**/datasets/
+#**/datasets/
 **/__pycache__/
 
