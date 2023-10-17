@@ -2,18 +2,20 @@
 ##############################################################################################################################################
 GPUID=$1
 #datasets=("./datasets/Mix/" "./datasets/Sec/" "./datasets/Sur/")
-datasets=("./datasets/Sur/")
+#datasets=("./datasets/Sur/")
+datasets=("./datasets/Mix/" )
 NUM_CLASSES=6
-#Models=("resnet50" "densenet201" "vgg16")
-Models=("densenet201")
+Models=("resnet50" "densenet201" "vgg16")
+#Models=("densenet201")
 PPs_ARRAY=(1 3 10 50 100)
 #PPs=1
-#loss= "ce, pps_loss, icnn, Gaffinity"
-loss="icnn"
+#loss= "ce, pps_loss, icnn, Gaffinity, pps_plus_icnn"
+loss="pps_plus_icnn"
 #experiment_counter_array=(1 2 3 4 5)
 experiment_counter=1
-DA_array=("OsDA" "NoDA")
-RUNs_ARRAY=("run1" "run2" "run3" "run4" "run5")
+#DA_array=("OsDA" "NoDA")
+DA_array=("OsDA")
+RUNs_ARRAY=("PPsnICNN_loss_run1" "PPsnICNN_loss_run2" "PPsnICNN_loss_run3" "PPsnICNN_loss_run4" "PPsnICNN_loss_run5")
 #RUNs_ARRAY=("run1" "run2" "run3")
 #RUN="run1"
 echo "training:"

@@ -3,22 +3,23 @@
 GPUID=$1
 #datasets=("./datasets/Mix/" "./datasets/Sec/" "./datasets/Sur/")
 #datasets=("./datasets/SurMix_crossV_fold1/")
-data_path="./datasets/Mix_crossV_fold1/"
+#data_path="./datasets/Mix_crossV_fold1/"
+data_path="./datasets/Mix/"
 NUM_CLASSES=6
 #Models=("resnet50" "densenet201" "vgg16")
 #Models=("resnet50")
 nn_model="resnet50"
 #PPs_ARRAY=(1 3 10 50 100)
 PPs=3
-#loss= "ce, pps_loss, icnn, Gaffinity"
-loss="icnn"
+#loss= "ce, pps_loss, icnn, Gaffinity, pps_plus_icnn"
+loss="pps_plus_icnn"
 #experiment_counter_array=(1 2 3 4 5)
 experiment_counter=1
 #DA_array=("OsDA" "NoDA")
 DA="OsDA"
-RUNs_ARRAY=("run11" "run12" "run13" "run14" "run15")
+#RUNs_ARRAY=("run1" "run2" "run3" "run4" "run5")
 #RUNs_ARRAY=("run1" "run2" "run3")
-#RUN="run1"
+RUN="pps_plus_icnn_run0"
 echo "training:"
 #for RUN in "${RUNs_ARRAY[@]}"; do
 #	#for DA in "${DA_array[@]}"; do
