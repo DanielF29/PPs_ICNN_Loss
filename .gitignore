@@ -1,9 +1,18 @@
+#To keep track of all files and folders except the ones listed below:
 performance_evaluations/*
 pretrained_models/*
 saved_models/*
 datasets/*
+#Exceptions to keep track of some folders:
+#!myfolder/.gitkeep
+!performance_evaluations/.gitkeep
+!pretrained_models/.gitkeep
+!saved_models/.gitkeep
+!datasets/.gitkeep
+#Folder to do not keep track of:
 ZIP/
 __pycache__/
+#Files to do not keep track of:
 *.pyc
 *.pyo
 *.egg-info/
@@ -19,7 +28,7 @@ env/
 *.ico
 *.webp
 *.svg
+#To do not keep track of a file or folder with certain name in any folder:
 **/datasets/
 **/__pycache__/
-
 
